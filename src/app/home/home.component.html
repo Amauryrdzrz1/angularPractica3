@@ -1,0 +1,10 @@
+<h1>Bienvenido!</h1>
+<div>
+    <form class="form-signin animated fadeIn" autocomplete="off" [formGroup]="edadForm" (ngSubmit)="obtenerEdad()">
+        <label class="sr-only" for="inputEdad">Cual es tu edad?</label>
+        <input type="text" class="form-control mb-2" id="inputEdad" placeholder="Edad" formControlName="edad" />
+        <button type="submit" class="btn btn-lg btn-primary btn-block mb-2">
+            Entrar
+        </button>
+    </form>
+</div>
